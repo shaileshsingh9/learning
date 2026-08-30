@@ -1,23 +1,29 @@
-class Students{
+class Students {
 
-    Students(){
-        System.out.println("Constructor created...");
+    String name;
+    int age;
 
+    Students() {
     }
-    Students(String name){
-        System.out.println("Name = "+name);
+
+    Students(String name) {
+        this.name = name;
     }
-    Students(String name, int age){
-        System.out.println("Name = "+name);
-        System.out.println("Age = "+age);
+
+    Students(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 }
 
-
 public class ConsOverloading {
+
     public static void main(String[] args) {
-      Students students=new Students();
-      Students students1=new Students("shailesh singh");
-      Students students2=new Students("Munjesh singh", 25);
+
+        Students students = new Students();
+
+        Students students1 = new Students("Shailesh Singh");
+
+        Students students2 = new Students("Munjesh Singh", 25);
     }
 }
